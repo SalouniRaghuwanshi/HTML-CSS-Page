@@ -10,34 +10,58 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.google.com/specimen/Kumbh+Sans');
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    @media (max-width: 1440px) {
+
     body{
-      @import url(https://fonts.google.com/specimen/Kumbh+Sans);
-    background-color:hsl(185, 75%, 39%);
+    font-weight: 400 700;
+    font-size: 18px;
+    background-color: hsl(185, 75%, 39%);
     background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg);
-    background-position: top left, bottom right;
+    background-position: top 90% left -80%, top -60% right -70%;
     background-repeat: no-repeat;
-  
-    }
+  }
+  div{
+   box-sizing: border-box;
+
+   background-image: url(images/bg-pattern-card.svg) 40% / cover border-box;
+   margin: auto;
+   margin-top: 200px;
+    background-color: white;
+    max-width: 350px;
+    padding: 1px;
+    
+  }
+  .img{
+          margin-top: 350px;
+          border-radius:50%;
+          position:absolute;
+          top:-10%;
+          left:calc(50% - 50px);
+  }
+  }
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<div>
+  <img src="images/bg-pattern-card.svg">
+  <img src="images/image-victor.jpg" class="img"><br><br><br>
+  <p style="text-align: center;"><b>Victor Crest</b> 26 <br>London</p>
+  <hr>
+  <table width=100%>
+    <tr style="text-align: center;">
+      <td><b>80K</b>
+        <br>Followers</td>
+      
+        <td><b>803K</b>
+        <br>Likes</td>
+      
+       <td><b>1.4K</b>
+       <br> Photos</td>
+    </tr>
+  </table>
+</div>
 </body>
 </html>
