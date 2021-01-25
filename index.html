@@ -13,55 +13,44 @@
     @import url('https://fonts.google.com/specimen/Kumbh+Sans');
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    @media (max-width: 1440px) {
-
-    body{
+    @media (max-width: 1440px ) {
+    /*body{
+    margin: 0;
+    padding: 0;
     font-weight: 400 700;
     font-size: 18px;
     background-color: hsl(185, 75%, 39%);
-    background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg);
-    background-position: top 100% left -100%, top -70% right -80%;
     background-repeat: no-repeat;
-  }
-  div{
+    
+  }*/
+  .box{
    box-sizing: border-box;
-
-   background-image: url(images/bg-pattern-card.svg) 40% / cover border-box;
-   margin: auto;
-   margin-top: 200px;
+   position: fixed;
     background-color: white;
     max-width: 350px;
     padding-bottom: 20px;
     
   }
   .img{
-          margin-top: 350px;
+         
           border-radius:50%;
           position:absolute;
-          top:-10%;
-          left:calc(50% - 50px);
+          
   }
+  .img1{
+    transform: translate(-30% ,-60%);
   }
+  .img2{
+transform: translate(50%, -70%);
+  }}
   </style>
 </head>
 <body>
-<div>
-  <img src="images/bg-pattern-card.svg">
-  <img src="images/image-victor.jpg" class="img"><br><br>
-  <p style="text-align: center;"><b>Victor Crest</b> 26 <br><span style="font-size: smaller;">London</span></p>
-  <hr style="color: #D1D5DB;">
-  <table width=100%>
-    <tr style="text-align: center;">
-      <td><b>80K</b>
-        <br><span style="font-size:small">Followers</span></td>
-      
-        <td><b>803K</b>
-        <br><span style="font-size: small;">Likes</span></td>
-      
-       <td><b>1.4K</b>
-       <br><span style="font-size: small;">Photos</span></td>
-    </tr>
-  </table>
-</div>
+  <div class="img1">
+    <img src="images/bg-pattern-top.svg">
+    </div>
+    <div class="img2">
+      <img src="images/bg-pattern-bottom.svg">
+      </div>
 </body>
 </html>
