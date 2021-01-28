@@ -13,7 +13,7 @@
     @import url('https://fonts.google.com/specimen/Kumbh+Sans');
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
- 
+    @media all and (max-width: 1440px) and (min-width: 375px){
     body{
       font-weight: 400 700;
     font-size: 18px;
@@ -30,12 +30,12 @@
   margin-left: 35%;
     background-color: white;
     width: 350px;
-    height: 300px;
+    height: 320px;
     padding-bottom: 20px;
     position: absolute;
   }
   .img{
-    margin-top: 40%;
+    margin-top: 35%;
           border-radius:50%;
           position:absolute;
           top:-10%;
@@ -53,30 +53,30 @@
   hr{
     opacity: 0.5;
   }
-  .bg1{
-    background-image: url(images/bg-pattern-card.svg);
-  }
+  .f-gary{
+    color:gray;
+  }}
   </style>
 </head>
 <body>
   <div>
     <img src="images/bg-pattern-top.svg" class="img1">
       <img  src="images/bg-pattern-top.svg" class="img2"></div>
-      <div class="box">
-        <div class="bg1">
-        <img src="images/image-victor.jpg" class="img"> 
-      <div style="text-align: center;"><b>Victor Crest</b> 26 <br><span style="font-size: smaller;">London</span></div>
+          <div class="box">
+          <img src="images/bg-pattern-card.svg">
+        <img src="images/image-victor.jpg" class="img"> <br><br><br><br>
+      <div style="text-align: center;" class="c"><b>Victor Crest</b> 26 <br><span style="font-size: smaller;" class="f-gray">London</span>
         <hr style="color: #D1D5DB;">
         <table width=100%>
           <tr style="text-align: center;">
             <td><b>80K</b>
-              <br><span style="font-size:small">Followers</span></td>
+              <br><span style="font-size:small" class="f-gray">Followers</span></td>
             
               <td><b>803K</b>
-              <br><span style="font-size: small;">Likes</span></td>
+              <br><span style="font-size: small;" class="f-gray">Likes</span></td>
             
              <td><b>1.4K</b>
-             <br><span style="font-size: small;">Photos</span></td>
+             <br><span style="font-size: small;" class="f-gray">Photos</span></td>
           </tr>
         </table>
      </div>
